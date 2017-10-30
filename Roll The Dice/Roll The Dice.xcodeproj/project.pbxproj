@@ -14,6 +14,8 @@
 		4366A7841FA718C5007F997F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4366A7831FA718C5007F997F /* Assets.xcassets */; };
 		4366A7871FA718C5007F997F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4366A7851FA718C5007F997F /* LaunchScreen.storyboard */; };
 		4366A7921FA718C5007F997F /* Roll_The_DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4366A7911FA718C5007F997F /* Roll_The_DiceTests.swift */; };
+		4366A7A31FA76595007F997F /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4366A7A21FA76595007F997F /* UIButtonExt.swift */; };
+		4366A7A51FA766D1007F997F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4366A7A41FA766D1007F997F /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		4366A78D1FA718C5007F997F /* Roll The DiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roll The DiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4366A7911FA718C5007F997F /* Roll_The_DiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roll_The_DiceTests.swift; sourceTree = "<group>"; };
 		4366A7931FA718C5007F997F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4366A7A21FA76595007F997F /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		4366A7A41FA766D1007F997F /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				4366A7851FA718C5007F997F /* LaunchScreen.storyboard */,
 				4366A7881FA718C5007F997F /* Info.plist */,
 				4366A7801FA718C5007F997F /* Roll_The_Dice.xcdatamodeld */,
+				4366A7A21FA76595007F997F /* UIButtonExt.swift */,
+				4366A7A41FA766D1007F997F /* UIImage.swift */,
 			);
 			path = "Roll The Dice";
 			sourceTree = "<group>";
@@ -203,8 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4366A77C1FA718C5007F997F /* ViewController.swift in Sources */,
+				4366A7A51FA766D1007F997F /* UIImage.swift in Sources */,
 				4366A7821FA718C5007F997F /* Roll_The_Dice.xcdatamodeld in Sources */,
 				4366A77A1FA718C5007F997F /* AppDelegate.swift in Sources */,
+				4366A7A31FA76595007F997F /* UIButtonExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

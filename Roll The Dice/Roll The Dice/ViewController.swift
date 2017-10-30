@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     //Vars
     var randomDiceIndex1 = 0
     var randomDiceIndex2 = 0
@@ -22,29 +23,42 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
+    @IBOutlet weak var mainBtn: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        updatesDices()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     
     @IBAction func rollBtnPressed(_ sender: Any) {
+        updatesDices()
+
+        diceImageView1.wiggle()
+        diceImageView2.wiggle()
         
-        randomDiceIndex1 = Int(arc4random_uniform(6))
-        randomDiceIndex2 = Int(arc4random_uniform(6))
-        
-        print(randomDiceIndex1)
-        
-        diceImageView1.image = UIImage(named: diceArr[randomDiceIndex1])
-        diceImageView2.image = UIImage(named: diceArr[randomDiceIndex2])
+        mainBtn.dim()   
         
     }
     
-
+    
+    //Update the dice faces.
+    func updatesDices(){
+        randomDiceIndex1 = Int(arc4random_uniform(6))
+        randomDiceIndex2 = Int(arc4random_uniform(6))
+        
+        
+        diceImageView1.image = UIImage(named: diceArr[randomDiceIndex1])
+        diceImageView2.image = UIImage(named: diceArr[randomDiceIndex2])
+    }
+    
 }
 
