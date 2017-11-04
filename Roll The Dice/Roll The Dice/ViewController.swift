@@ -25,28 +25,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mainBtn: UIButton!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         updatesDices()
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
     
     @IBAction func rollBtnPressed(_ sender: Any) {
         updatesDices()
-
         diceImageView1.wiggle()
         diceImageView2.wiggle()
-        
-        mainBtn.dim()   
-        
+        mainBtn.dim()
     }
     
     
@@ -54,8 +46,7 @@ class ViewController: UIViewController {
     func updatesDices(){
         randomDiceIndex1 = Int(arc4random_uniform(6))
         randomDiceIndex2 = Int(arc4random_uniform(6))
-        
-        
+    
         diceImageView1.image = UIImage(named: diceArr[randomDiceIndex1])
         diceImageView2.image = UIImage(named: diceArr[randomDiceIndex2])
     }
@@ -64,6 +55,4 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         updatesDices()
     }
-    
 }
-

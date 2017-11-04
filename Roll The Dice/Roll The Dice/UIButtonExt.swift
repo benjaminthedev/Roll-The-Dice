@@ -7,9 +7,7 @@
 //
 
 import UIKit
-
 extension UIButton{
-    
     func dim(){
         UIView.animate(withDuration: 0.85, animations:{
             self.alpha = 0.75
@@ -19,7 +17,4 @@ extension UIButton{
             })
         }
     }
-    
-
 }
-

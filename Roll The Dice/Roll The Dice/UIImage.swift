@@ -7,9 +7,7 @@
 //
 
 import UIKit
-
 extension UIImageView{
-    
     func wiggle(){
         let wiggleAnimation = CABasicAnimation(keyPath: "position")
         wiggleAnimation.duration = 0.05
@@ -19,6 +17,4 @@ extension UIImageView{
         wiggleAnimation.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
         layer.add(wiggleAnimation, forKey: "position")
     }
-    
 }
-
